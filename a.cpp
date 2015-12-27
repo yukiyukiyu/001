@@ -33,7 +33,7 @@ long long fib(int a)
     return fibarr[a];
 }   
 
-void punchCat()
+void punchSiHeiCat()
 {
     printf("Meeeeeeow!!!! =A=");
     printf("\n");
@@ -43,6 +43,6 @@ int main(void)
 {
     for(int i = 1; i <= 10; i ++)
         printf("%d\n", fib(i));
-    punchCat();
+    punchSiHeiCat();
     return 0;
 }
