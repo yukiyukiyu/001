@@ -23,7 +23,7 @@ using namespace std;
 #define FORk(l,r) for(int k=(l);k<(r);k++)
 #define MEMSET0(i) memset((i),0,sizeof((i)))
 #define MEMSET1(i) memset((i),-1,sizeof((i)))
-int fib(int a)
+long long fib(int a)
 {
     int i,fibarr[50];
     fibarr[1]=1;
