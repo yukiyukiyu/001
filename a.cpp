@@ -24,14 +24,15 @@ using namespace std;
 #define FORk(l,r) for(int k=(l);k<(r);k++)
 #define MEMSET0(i) memset((i),0,sizeof((i)))
 #define MEMSET1(i) memset((i),-1,sizeof((i)))
-
 int fib(int a)
 {
-    if( a <= 2 )
-        return 1;
-    else
-        return fib(a - 1) + fib(a - 2);
-}
+    int i,fibarr[50];
+    fibarr[1]=1;
+    fibarr[2]=1;
+    for(i=3; i<=a; i++)
+        fibarr[i]=fibarr[i-1]+fibarr[i-2];
+    return fibarr[a];
+}   
 
 int main(void)
 {
